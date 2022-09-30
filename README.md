@@ -7,6 +7,9 @@
 
 [![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=felipementel&theme=blue-green)](https://github.com/felipementel/github-readme-stats)
 
+[![Linkedin](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=Linkedin)](https://www.linkedin.com/in/felipementel/)
+[![StackOverflow](https://img.shields.io/badge/Stackoverflow-lightgrey?style=for-the-badge&logo=stack-overflow)](https://stackoverflow.com/users/8104755/felipe-augusto?tab=profile)
+
 ## Views
 
 ![Visitas](https://visitor-badge.glitch.me/badge?page_id=felipementel)
