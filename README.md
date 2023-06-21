@@ -41,7 +41,7 @@
 ## Views
 
 ![Visitas](https://visitor-badge.glitch.me/badge?page_id=felipementel)
-![](https://komarev.com/ghpvc/?username=felipementel&label=PROFILE+VIEWS&style=for-the-badge)
+![](https://komarev.com/ghpvc/?username=felipementel&label=PROFILE+VIEWS&style=for-the-badge&color=brightgreen)
 
 <!--
 **felipementel/felipementel** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
