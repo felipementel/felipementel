@@ -40,7 +40,6 @@
 
 ## Views
 
-![Visitas](https://visitor-badge.glitch.me/badge?page_id=felipementel)
 ![](https://komarev.com/ghpvc/?username=felipementel&label=PROFILE+VIEWS&style=for-the-badge&color=brightgreen)
 
 <!--
