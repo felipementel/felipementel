@@ -41,6 +41,7 @@
 ## Views
 
 ![](https://komarev.com/ghpvc/?username=felipementel&label=PROFILE+VIEWS&style=for-the-badge&color=brightgreen)
+[![committers.top badge](https://user-badge.committers.top/brazil/felipementel.svg)](https://user-badge.committers.top/brazil/felipementel)
 
 <!--
 **felipementel/felipementel** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
