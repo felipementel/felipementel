@@ -6,9 +6,69 @@
 ![1](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=felipementel&layout=compact&theme=blue-green)
 [![Anurag's github stats](https://github-readme-stats-sigma-five.vercel.app/api?username=felipementel&theme=blue-green)](https://github.com/felipementel/github-readme-stats)
 
-
 [![Linkedin](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=Linkedin)](https://www.linkedin.com/in/felipementel/)
 [![StackOverflow](https://img.shields.io/badge/Stackoverflow-lightgrey?style=for-the-badge&logo=stack-overflow)](https://stackoverflow.com/users/8104755/felipe-augusto?tab=profile)
+
+## Certificações 🏆
+
+### Microsoft Azure
+
+<div>
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-fundamentals-ai-900.png" alt="Azure AI Fundamentals" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-fundamentals-az-900.png" alt="Azure Fundamentals" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-fundamentals-dp-900.png" alt="Azure Data Fundamentals" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-fundamentals-ms-900.png" alt="Microsoft 365 Fundamentals" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-fundamentals-pl-900.png" alt="Power Platform Fundamentals" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-fundamentals-sc-900.png" alt="Security Fundamentals" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-associate-ai-102.png" alt="Azure AI Engineer Associate" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-associate-az-104.png" alt="Azure Administrator Associate" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-associate-az-204.png" alt="Azure Developer Associate" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-specialist-dp-420.png" alt="Azure Cosmos DB Developer Specialist" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-expert-az-305.png" alt="Azure Solutions Architect Expert" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-expert-az-400.png" alt="DevOps Engineer Expert" />
+</div>
+
+### AWS
+
+<div>
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/aws/aws-cloud-practitioner.png" alt="AWS Cloud Practitioner" />
+</div>
+
+### Accenture
+
+<div>
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/accenture/accenture-arquitetura.png" alt="Accenture Arquitectura" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/accenture/accenture-cdp.png" alt="Accenture CDP" />
+</div>
+
+### GitHub
+
+<div>
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/github/github-actions.png" alt="GitHub Actions" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/github/github-administration.png" alt="GitHub Administration" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/github/github-advanced-security.png" alt="GitHub Advanced Security" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/github/github-foundations.png" alt="GitHub Foundations" />
+</div>
+
+### Exin
+
+<div>
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/exin/exin-devops-professional.png" alt="Exin DevOps Professional" />
+</div>
+
+### Linux Foundation
+
+<div>
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/the-linux-foundation/finops.png" alt="FinOps" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/the-linux-foundation/LFC108.png" alt="LFC108" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/the-linux-foundation/LFC112.png" alt="LFC112" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/the-linux-foundation/LFC131.png" alt="LFC131" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/the-linux-foundation/LFEL1002.png" alt="LFEL1002" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/the-linux-foundation/LFS169.png" alt="LFS169" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/the-linux-foundation/SKF100.png" alt="SKF100" />
+</div>
+
+## Stack 🛠️
 
 <div style="display: inline_block"><br>
     <img align="center" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original-wordmark.svg" />
@@ -36,7 +96,7 @@
     <img align="center" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg" />
     <img align="center" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" />
     <img align="center" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ssh/ssh-original.svg" />
-</div> 
+</div>
 
 ## Views
 
