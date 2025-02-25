@@ -1,5 +1,31 @@
-### Welcome my GitHub 👋
+### Welcome my Personal GitHub 👋
 
+````json
+{
+  "name": "Felipe Augusto",
+  "title": "Microsoft MVP",
+  "professionalRoles": [
+    {
+      "role": "Technical Architecture Manager",
+      "company": "Avanade"
+    },
+    {
+      "course": "MIT Systems Architecture",
+      "institution": "Infnet"
+    }
+  ],
+  " hobbies": [
+    "Sailing",
+    "Playing sports",
+    "Running",
+    "Bodyboarding",
+    "Skateboarding",
+    "Cycling",
+    "Helping people develop",
+    "Studying"
+  ]
+}
+````
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/felipementel/badges/)
 [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
 
