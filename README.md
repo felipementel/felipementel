@@ -14,7 +14,7 @@
       "institution": "Infnet"
     }
   ],
-  " hobbies": [
+  "hobbies": [
     "Sailing",
     "Playing sports",
     "Running",
