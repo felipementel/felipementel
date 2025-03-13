@@ -37,7 +37,8 @@
 
 ## Reconhecimentos 🔐
 
-  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/mvp/logo.png" alt="Microsoft Most Valuable Professional" />
+  <a href="https://mvp.microsoft.com/en-US/mvp/profile/f6d8ec73-8d9d-4795-b1e6-ab78dc823362" target="_blank"><img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/mvp/logo.png" alt="Microsoft Most Valuable Professional" /></a>
+  
 
 ## Certificações 🏆
 
