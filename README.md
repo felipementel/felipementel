@@ -35,6 +35,10 @@
 [![Linkedin](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=Linkedin)](https://www.linkedin.com/in/felipementel/)
 [![StackOverflow](https://img.shields.io/badge/Stackoverflow-lightgrey?style=for-the-badge&logo=stack-overflow)](https://stackoverflow.com/users/8104755/felipe-augusto?tab=profile)
 
+## Reconhecimentos 🔐
+
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/mvp/logo.png" alt="Microsoft Most Valuable Professional" />
+
 ## Certificações 🏆
 
 ### Microsoft Azure
