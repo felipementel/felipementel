@@ -80,6 +80,9 @@
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/github/github-advanced-security.png" alt="GitHub Advanced Security" />
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/github/github-foundations.png" alt="GitHub Foundations" />
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/github/github-copilot.png" alt="GitHub Copilot" />
+
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/github/github-sales-tech-professional.png" alt="GitHub Tech Sales Professional" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/github/github-sales-professional.png" alt="GitHub Sales Professional" />
 </div>
 
 ### Exin
