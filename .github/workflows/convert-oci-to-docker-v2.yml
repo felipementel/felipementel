@@ -1,0 +1,159 @@
+name: Convert OCI v1 to Docker v2 Schema 2
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_image:
+        description: 'Source image name (registry/repository:tag)'
+        required: false
+        default: 'ubi9/ubi:latest'
+        type: string
+      target_image:
+        description: 'Target image name (registry/repository:tag)'
+        required: false
+        default: 'ubi9/ubi-converted:v2s2'
+        type: string
+
+env:
+  NEXUS_REGISTRY: nexusrepository.bradesco.com.br:8500
+
+jobs:
+  convert-image:
+    runs-on: ubuntu-latest
+    name: Convert OCI v1 Image to Docker v2 Schema 2
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Install Skopeo
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y skopeo
+
+    - name: Verify Skopeo installation
+      run: |
+        skopeo --version
+        echo "Skopeo installed successfully"
+
+    - name: Set image variables
+      run: |
+        echo "SOURCE_IMAGE=${{ env.NEXUS_REGISTRY }}/${{ inputs.source_image }}" >> $GITHUB_ENV
+        echo "TARGET_IMAGE=${{ env.NEXUS_REGISTRY }}/${{ inputs.target_image }}" >> $GITHUB_ENV
+        echo "Source image: ${{ env.NEXUS_REGISTRY }}/${{ inputs.source_image }}"
+        echo "Target image: ${{ env.NEXUS_REGISTRY }}/${{ inputs.target_image }}"
+
+    - name: Verify source image format
+      run: |
+        echo "Inspecting source image format..."
+        skopeo inspect \
+          --src-tls-verify=false \
+          --creds "${{ secrets.NEXUS_USERNAME }}:${{ secrets.NEXUS_PASSWORD }}" \
+          "docker://${{ env.SOURCE_IMAGE }}" | \
+          jq -r '.MediaType // "unknown"' > source_format.txt
+        
+        SOURCE_FORMAT=$(cat source_format.txt)
+        echo "Source image format: $SOURCE_FORMAT"
+        
+        if [[ "$SOURCE_FORMAT" == "application/vnd.oci.image.manifest.v1+json" ]]; then
+          echo "✅ Source image is in OCI v1 format as expected"
+        else
+          echo "⚠️  Source image format is: $SOURCE_FORMAT"
+          echo "Expected: application/vnd.oci.image.manifest.v1+json"
+        fi
+
+    - name: Convert OCI v1 to Docker v2 Schema 2
+      run: |
+        echo "Converting image from OCI v1 to Docker v2 Schema 2..."
+        skopeo copy \
+          --src-tls-verify=false \
+          --dest-tls-verify=false \
+          --src-creds "${{ secrets.NEXUS_USERNAME }}:${{ secrets.NEXUS_PASSWORD }}" \
+          --dest-creds "${{ secrets.NEXUS_USERNAME }}:${{ secrets.NEXUS_PASSWORD }}" \
+          --format v2s2 \
+          "docker://${{ env.SOURCE_IMAGE }}" \
+          "docker://${{ env.TARGET_IMAGE }}"
+        
+        echo "✅ Image conversion completed successfully"
+
+    - name: Verify target image format
+      run: |
+        echo "Inspecting target image format..."
+        skopeo inspect \
+          --src-tls-verify=false \
+          --creds "${{ secrets.NEXUS_USERNAME }}:${{ secrets.NEXUS_PASSWORD }}" \
+          "docker://${{ env.TARGET_IMAGE }}" | \
+          jq -r '.MediaType // "unknown"' > target_format.txt
+        
+        TARGET_FORMAT=$(cat target_format.txt)
+        echo "Target image format: $TARGET_FORMAT"
+        
+        if [[ "$TARGET_FORMAT" == "application/vnd.docker.distribution.manifest.v2+json" ]]; then
+          echo "✅ Target image is in Docker v2 Schema 2 format as expected"
+        else
+          echo "❌ Target image format is: $TARGET_FORMAT"
+          echo "Expected: application/vnd.docker.distribution.manifest.v2+json"
+          exit 1
+        fi
+
+    - name: Verify image functionality
+      run: |
+        echo "Verifying image layers and metadata..."
+        
+        # Get source image info
+        echo "Source image details:"
+        skopeo inspect \
+          --src-tls-verify=false \
+          --creds "${{ secrets.NEXUS_USERNAME }}:${{ secrets.NEXUS_PASSWORD }}" \
+          "docker://${{ env.SOURCE_IMAGE }}" | \
+          jq '{Name, Tag, Digest, Architecture, Os, Layers: (.Layers | length)}'
+        
+        # Get target image info
+        echo "Target image details:"
+        skopeo inspect \
+          --src-tls-verify=false \
+          --creds "${{ secrets.NEXUS_USERNAME }}:${{ secrets.NEXUS_PASSWORD }}" \
+          "docker://${{ env.TARGET_IMAGE }}" | \
+          jq '{Name, Tag, Digest, Architecture, Os, Layers: (.Layers | length)}'
+        
+        # Compare layer counts
+        SOURCE_LAYERS=$(skopeo inspect \
+          --src-tls-verify=false \
+          --creds "${{ secrets.NEXUS_USERNAME }}:${{ secrets.NEXUS_PASSWORD }}" \
+          "docker://${{ env.SOURCE_IMAGE }}" | jq '.Layers | length')
+        
+        TARGET_LAYERS=$(skopeo inspect \
+          --src-tls-verify=false \
+          --creds "${{ secrets.NEXUS_USERNAME }}:${{ secrets.NEXUS_PASSWORD }}" \
+          "docker://${{ env.TARGET_IMAGE }}" | jq '.Layers | length')
+        
+        if [[ "$SOURCE_LAYERS" == "$TARGET_LAYERS" ]]; then
+          echo "✅ Layer count matches: $SOURCE_LAYERS layers"
+        else
+          echo "❌ Layer count mismatch: Source=$SOURCE_LAYERS, Target=$TARGET_LAYERS"
+          exit 1
+        fi
+
+    - name: Generate conversion summary
+      run: |
+        echo "## 🎉 Image Conversion Summary" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Source Image" >> $GITHUB_STEP_SUMMARY
+        echo "- **Registry**: ${{ env.NEXUS_REGISTRY }}" >> $GITHUB_STEP_SUMMARY
+        echo "- **Image**: ${{ inputs.source_image }}" >> $GITHUB_STEP_SUMMARY
+        echo "- **Format**: $(cat source_format.txt)" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Target Image" >> $GITHUB_STEP_SUMMARY
+        echo "- **Registry**: ${{ env.NEXUS_REGISTRY }}" >> $GITHUB_STEP_SUMMARY
+        echo "- **Image**: ${{ inputs.target_image }}" >> $GITHUB_STEP_SUMMARY
+        echo "- **Format**: $(cat target_format.txt)" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Conversion Result" >> $GITHUB_STEP_SUMMARY
+        echo "✅ **SUCCESS**: Image successfully converted from OCI v1 to Docker v2 Schema 2" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "The converted image is now available in your Nexus registry and compatible with tools that require Docker v2 Schema 2 format." >> $GITHUB_STEP_SUMMARY
+
+    - name: Clean up temporary files
+      if: always()
+      run: |
+        rm -f source_format.txt target_format.txt
