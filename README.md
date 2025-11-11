@@ -92,8 +92,11 @@
 </div>
 
 ### Linux Foundation
-
 <div>
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/the-linux-foundation/gsf.png" alt="Green Software Practitioner" />
+</div>
+<div>
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/the-linux-foundation/LFEL1009.png" alt="LFEL1009" />
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/the-linux-foundation/finops.png" alt="FinOps" />
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/the-linux-foundation/LFC108.png" alt="LFC108" />
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/the-linux-foundation/LFC112.png" alt="LFC112" />
