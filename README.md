@@ -52,10 +52,15 @@
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-fundamentals-pl-900.png" alt="Power Platform Fundamentals" />
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-fundamentals-sc-900.png" alt="Security Fundamentals" />
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-fundamentals-ab-900.png" alt="Copilot and Agent Administrator" />
+</div>
+<div>
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-associate-ai-102.png" alt="Azure AI Engineer Associate" />
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-associate-az-104.png" alt="Azure Administrator Associate" />
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-associate-az-204.png" alt="Azure Developer Associate" />
-  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-specialist-dp-420.png" alt="Azure Cosmos DB Developer Specialist" />
+</div>
+<div>
+<img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-specialist-dp-420.png" alt="Azure Cosmos DB Developer Specialist" />
+<div>
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-expert-az-305.png" alt="Azure Solutions Architect Expert" />
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-expert-az-400.png" alt="DevOps Engineer Expert" />
 </div>
@@ -81,7 +86,8 @@
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/github/github-advanced-security.png" alt="GitHub Advanced Security" />
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/github/github-foundations.png" alt="GitHub Foundations" />
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/github/github-copilot.png" alt="GitHub Copilot" />
-
+</div>
+<div>
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/github/github-sales-tech-professional.png" alt="GitHub Tech Sales Professional" />
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/github/github-sales-professional.png" alt="GitHub Sales Professional" />
 </div>
