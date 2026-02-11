@@ -51,6 +51,7 @@
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-fundamentals-ms-900.png" alt="Microsoft 365 Fundamentals" />
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-fundamentals-pl-900.png" alt="Power Platform Fundamentals" />
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-fundamentals-sc-900.png" alt="Security Fundamentals" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-fundamentals-ab-900.png" alt="Copilot and Agent Administrator" />
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-associate-ai-102.png" alt="Azure AI Engineer Associate" />
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-associate-az-104.png" alt="Azure Administrator Associate" />
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/azure/azure-associate-az-204.png" alt="Azure Developer Associate" />
