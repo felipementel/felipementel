@@ -8,15 +8,25 @@
     {
       "role": "Technical Architecture Manager",
       "company": "Avanade"
-    },
-    {
-      "course": "MIT Systems Architecture",
-      "institution": "Infnet"
     }
   ],
+  "courses": [
+    {
+      "institution": "UTFPR - Federal University of Technology – Paraná",
+      "course": "Master's Degree",
+      "status": "in progress"
+    },
+    {
+      "institution": "Infnet",
+      "course": "MIT in Systems Architecture",
+      "status": "completed"
+    }
+  ],
+  "BrazilianMaritimeAuthority": "Amateur Master and Personal Watercraft Operator",
+  "PADI": "Open Water Diver",
   "hobbies": [
+    "Diving",
     "Sailing",
-    "Playing sports",
     "Running",
     "Bodyboarding",
     "Skateboarding",
