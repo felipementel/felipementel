@@ -3,7 +3,12 @@
 ````json
 {
   "name": "Felipe Augusto",
-  "title": "Microsoft MVP",
+  "title": [
+    {
+      "Microsoft MVP",
+      "Green Software Champion",
+      "DevOps Institute Ambassador"
+    },
   "professionalRoles": [
     {
       "role": "Technical Architecture Manager",
