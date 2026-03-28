@@ -3,7 +3,7 @@
 ````json
 {
   "name": "Felipe Augusto",
-  "title": [
+  "titles": [
     {
       "Microsoft MVP",
       "Green Software Champion",
