@@ -53,7 +53,7 @@
 ## Reconhecimentos 🔐
 
   <a href="https://mvp.microsoft.com/en-US/mvp/profile/f6d8ec73-8d9d-4795-b1e6-ab78dc823362" target="_blank"><img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/mvp/logo.png" alt="Microsoft Most Valuable Professional" /></a>
-  
+
 
 ## Certificações 🏆
 
@@ -105,6 +105,21 @@
 <div>
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/github/github-sales-tech-professional.png" alt="GitHub Tech Sales Professional" />
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/github/github-sales-professional.png" alt="GitHub Sales Professional" />
+    <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/github/github-gold.png" alt="GitHub Gold" />
+</div>
+
+### HashiCorp
+
+<div>
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/hashicorp/terraform004.png" alt="Terraform 004" />
+
+</div>
+
+### PeopleCert
+
+<div>
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/people-cert/DevSecOps.png" alt="DevSecOps Champion" />
+
 </div>
 
 ### Exin
@@ -115,7 +130,7 @@
 
 ### Linux Foundation
 <div>
-  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/the-linux-foundation/gsf.png" alt="Green Software Practitioner" />
+  <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/the-linux-foundation/gsf-champion.png" alt="Green Software Practitioner" />
 </div>
 <div>
   <img height="100" style="max-width: 150px; object-fit: contain;" src="docs/images/the-linux-foundation/LFEL1009.png" alt="LFEL1009" />
